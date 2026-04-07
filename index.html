@@ -20,13 +20,11 @@
             referrerpolicy="no-referrer"
         />
 
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
 
     <body class="weather-app d-flex flex-column min-vh-100">
-        <nav
-            class="navbar navbar-expand-lg navbar-dark bg-dark weather-app__navbar"
-        >
+        <nav class="navbar navbar-expand-lg navbar-dark weather-app__navbar">
             <div class="container-fluid">
                 <a class="navbar-brand weather-app__brand" href="#">
                     <i class="fa-solid fa-cloud-sun-rain"></i>
@@ -74,8 +72,10 @@
             <section id="vista-home" class="weather-app__home py-5">
                 <div class="container">
                     <div class="weather-app__results mb-4 text-center">
-                        <h2 class="h4">Destinos disponibles</h2>
-                        <p class="text-muted mb-0">
+                        <h2 class="weather-app__results-title h4">
+                            Destinos disponibles
+                        </h2>
+                        <p class="weather-app__results-text mb-0">
                             Revisa el clima actual de cada destino y entra al
                             detalle.
                         </p>
@@ -108,17 +108,11 @@
                 </div>
             </section>
         </main>
-
-        <footer
-            class="weather-app__footer bg-dark text-white text-center py-4 mt-auto"
-        >
+        <footer class="weather-app__footer text-center py-4 mt-auto">
             <div class="container">
-                <p class="mb-1">
+                <p class="weather-app__footer-paragraph mb-1">
                     <i class="fa-solid fa-cloud-sun-rain"></i>
                     Tour Clima &copy; 2026
-                </p>
-                <p class="mb-0 small">
-                    Proyecto frontend del módulo 3 - App de clima turístico.
                 </p>
             </div>
         </footer>

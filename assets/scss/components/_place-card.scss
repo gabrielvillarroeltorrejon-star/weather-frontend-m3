@@ -1,0 +1,51 @@
+@use "../abstracts/index" as *;
+
+.place-card {
+    @include card-surface;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__body {
+        padding: $padding-lg;
+        display: flex;
+        flex-direction: column;
+        gap: $gap-sm;
+        flex: 1;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $color-white;
+        margin-bottom: 0;
+    }
+
+    &__temp {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-accent;
+        margin-bottom: 0;
+    }
+
+    &__status {
+        font-size: 1rem;
+        color: $color-muted;
+        margin-bottom: 0.5rem;
+    }
+
+    &__button {
+        margin-top: auto;
+        border-radius: $border-radius-md;
+    }
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/index" as *;
+
+.weather-app {
+    &__hero {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: $margin-sm;
+        color: $color-white;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        color: $color-muted;
+    }
+
+    &__home {
+        flex: 1;
+    }
+
+    &__results-title {
+        color: $color-white;
+        font-weight: 600;
+    }
+
+    &__results-text {
+        color: $color-muted;
+    }
+
+    &__detail {
+        background: transparent;
+    }
+
+    &__back-btn {
+        border-radius: $border-radius-md;
+    }
+}

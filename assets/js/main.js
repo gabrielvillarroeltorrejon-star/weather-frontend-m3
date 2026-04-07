@@ -60,7 +60,7 @@ const destinos = [
         clima: "Parcialmente despejado",
         humedad: "80%",
         viento: "18Km/h",
-        imagen: "https://cdn-ildpkee.nitrocdn.com/DsGrLBJYSVIbemNsaXNXftjpEWFMzpVF/assets/images/optimized/rev-bcef266/skiportillo.com/wp-content/uploads/2022/01/hotel_img_foto1-1-1.png",
+        imagen: "https://cdn-ildpkee.nitrocdn.com/DsGrLBJYSVIbemNsaXNXftjpEWFMzpVF/assets/images/optimized/rev-30dd528/skiportillo.com/wp-content/uploads/2022/02/Montana_ClimaCondiciones_Hero.png",
         semana: [
             "Lunes 5°C",
             "Martes 6°C",
@@ -260,15 +260,15 @@ function renderDetalle(id) {
                         </div>
 
                         <div class="detail-card__info mb-4">
-                            <p class="mb-2">
-                                <strong><i class="fa-solid fa-droplet me-2"></i>Humedad:</strong>
-                                ${destinoSeleccionado.humedad}
-                            </p>
-                            <p class="mb-0">
-                                <strong><i class="fa-solid fa-wind me-2"></i>Viento:</strong>
-                                ${destinoSeleccionado.viento}
-                            </p>
-                        </div>
+    <p class="detail-card__info-text mb-2">
+        <strong><i class="fa-solid fa-droplet me-2"></i>Humedad:</strong>
+        ${destinoSeleccionado.humedad}
+    </p>
+    <p class="detail-card__info-text mb-0">
+        <strong><i class="fa-solid fa-wind me-2"></i>Viento:</strong>
+        ${destinoSeleccionado.viento}
+    </p>
+</div>
 
                         <h5 class="detail-card__subtitle">Pronóstico semanal</h5>
 

@@ -1,0 +1,8 @@
+@use "../abstracts/index" as *;
+
+.weather-app {
+    &__footer {
+        margin-top: auto;
+        border-top: 1px solid rgba(189, 211, 91, 0.2);
+    }
+}

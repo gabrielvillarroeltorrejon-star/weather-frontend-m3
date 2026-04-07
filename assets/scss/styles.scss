@@ -1,0 +1,44 @@
+@use "abstracts/index" as *;
+@use "base/index" as base;
+@use "layout/index" as layout;
+@use "components/index" as components;
+
+@media (max-width: 420px) {
+    .weather-app {
+        &__title {
+            font-size: 1.7rem;
+        }
+
+        &__subtitle {
+            font-size: 0.95rem;
+        }
+    }
+
+    .place-card {
+        &__image {
+            height: 200px;
+        }
+    }
+
+    .detail-card {
+        padding: $padding-md;
+
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .weather-app {
+        &__title {
+            font-size: 2.7rem;
+        }
+    }
+
+    .place-card {
+        &__image {
+            height: 240px;
+        }
+    }
+}
